@@ -16,6 +16,8 @@ exports.FlightCard = class FlightCard extends Helper {
 		this.firstSuggestedAirportOption = page.locator('div.airport-option');
 
 		this.departureDate = page.getByPlaceholder('dd/mm');
+
+		this.findFlightsButton = page.getByRole('button', { name: 'Find flights' });
 	}
 
 
